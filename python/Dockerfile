@@ -18,7 +18,6 @@ CMD [ "python", "./oci/Python/demo.py" ]
 #DEBUG
 RUN echo $(ansible-galaxy collection install oracle.oci)
 RUN echo $(ls -ltra /bin | grep cp)
-RUN echo $(python ./oci/Python/demo.py)
 RUN echo $(ansible --version)
 RUN echo $(ansible-playbook oci/ansible/sample.yaml)
 
